@@ -1,0 +1,11 @@
+.DS_Store
+.cache/
+.cache
+.credentials/
+.env
+data/
+logs/
+mgi-rill/
+portal/
+seeds/
+tests/

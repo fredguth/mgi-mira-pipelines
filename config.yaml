@@ -1,0 +1,14 @@
+ignore_patterns: ["models/**/_*.*", "models/**/*/_*.*", "models/**/**/*/_*.*", "models/**/**/**/*/_*.*"]
+gateways:
+  local:
+    connection:
+      type: duckdb
+      database: data/dw.db
+      extensions: [spatial, sqlite, excel]
+default_gateway: local
+
+model_defaults:
+  dialect: duckdb, normalization_strategy=case_sensitive
+  start: 2025-01-30
+
+
